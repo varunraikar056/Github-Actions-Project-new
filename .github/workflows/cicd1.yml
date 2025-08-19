@@ -7,7 +7,7 @@ on:
 
 jobs:
   compile:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 ## shared runner specified##
 
     steps:
@@ -22,7 +22,7 @@ jobs:
       run: mvn compile
       
   security-check:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: compile
 
     steps:
