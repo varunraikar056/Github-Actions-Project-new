@@ -100,7 +100,7 @@ jobs:
 
   build_docker_image_and_push:
     runs-on: self-hosted
-    needs: sonarqube_scan
+    needs: maven_package
     steps:
       - uses: actions/checkout@v4
       - name: download jar artifact
