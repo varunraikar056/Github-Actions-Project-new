@@ -100,7 +100,7 @@ jobs:
 
   build_docker_image_and_push:
     runs-on: self-hosted
-    needs: maven_package
+    needs: sonarqube_scan
 
     steps:
     - name: Checkout code
